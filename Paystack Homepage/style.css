@@ -60,7 +60,7 @@ body {
 
 .text-p {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.5;
   color: var(--blue-text-color);
 }
@@ -115,6 +115,7 @@ body {
 .header li:nth-child(2)::after{
   content: url('/Images/outline_arrow_drop_down_black_24dp.png');
   position: absolute;
+  cursor: pointer;
 }
 
 /* Showcase area */
@@ -147,6 +148,46 @@ body {
 }
 
 /* Container */
-.container {
- 
+.container img {
+  height: 120vh;
+  width: 120vw;
 }
+
+.container #showcase-container {
+  padding: 100px 0;
+}
+
+.container .flex-row div{
+ padding-bottom: 20px;
+}
+
+.container h1,
+.container p {
+  padding: 0 50px 20px;
+}
+
+/* The itemized items */
+.container .list::before{
+  content: url(/Images/outline_check_black_18dp.png);
+  background-color: var(--blue-bg-color);
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--green-btn-color);
+}
+
+.container a::before {
+  content: '>';
+  font-size: 10px;
+  font-weight: bold;
+  border: 2px solid var(--green-btn-color);
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* .container #block-image {
+  height: 100px;
+  width: 50vw;
+} */

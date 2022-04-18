@@ -45,14 +45,14 @@ body {
 .text-lg {
   text-align: left;
   font-size: 50px;
-  font-weight: 800;
+  font-weight:bolder;
   line-height: 1;
   color: var(--blue-text-color);
 }
 
 .text-md {
   text-align: left;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 800;
   line-height: 1.2;
   color: var(--blue-text-color);
@@ -154,12 +154,14 @@ body {
 }
 
 .container #showcase-container,
-.grid-container #showcase-container-grid {
+.grid-container #showcase-container-grid,
+#showcase-container-grid-2 {
   padding: 100px 0;
 }
 
 .container .flex-row div{
  padding-bottom: 20px;
+ padding-top: 20px;
 }
 
 .container h1,
@@ -210,15 +212,46 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   border-radius: 5px;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 .grid .flex-column {
   background-color: white;
   border-radius: 5px;
   padding: 50px;
+  align-content: center;
 }
 
+.grid img {
+  width: 150px;
+}
+
+/* Second grid items design */
+.grid .grid-2-img {
+  width: 60px;
+}
+
+.grid #ylogo-img {
+  width: 40px;
+}
+
+.grid .ceo-img {
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  border-radius: 50%;
+} 
+
+.grid .ceo-text p:first-of-type{
+  font-size: 16px;
+}
+
+.grid .ceo-text p:nth-of-type(2){
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Continuation of general grid items */
 .grid p:first-of-type {
   font-size: 25px;
   font-weight: bold;
@@ -247,4 +280,67 @@ body {
   padding: 5px;
   border-radius: 50%;
   margin-right: 5px;
+}
+
+/* Container testimonials */
+.grid-container.testimonial {
+  background-color: white;
+}
+
+.grid-container.testimonial h1 {
+  width: 60vw;
+  padding-bottom: 20px;
+}
+
+.grid-container.testimonial p {
+  width: 50vw;
+  padding-bottom: 20px;
+}
+
+/* Sign-up container */
+.container.flex-row.sign-up {
+  padding: 100px 100px 50px 0;
+}
+
+.container.flex-row.sign-up div{
+  width: 60vw;
+}
+
+.container.flex-row.sign-up .btn{
+  align-self: center;
+  padding: 15px 30px;
+}
+
+/* footer */
+.footer {
+  padding-left: 50px;
+}
+
+.footer .grid-footer{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.footer .grid-footer p:first-of-type,
+.footer .grid-footer p:nth-of-type(2) {
+  font-size: 16px;
+}
+
+.footer .grid-footer p:nth-of-type(2) {
+  padding-bottom: 0;
+  font-weight: 300;
+}
+
+.footer span{
+  font-weight: bold;
+}
+
+.footer .grid.grid-footer div p:hover {
+  cursor: pointer;
+  color: #06e;
+}
+
+.footer img {
+  width: 30px;
 }
